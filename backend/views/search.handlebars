@@ -1,0 +1,25 @@
+<form method="get" action="api/search">
+<input id="search" type="text" name="search" placeholder="    Search Events" style="height: 25px; width: 300px">
+    <input id="btnSearch" type="button" value="Search" onclick="this.form.submit()" style="height: 25px !important;">
+    <div id = "result"> </div>
+</form>
+
+{{#if searchResult.length}}
+    <h3> Search Result for : {{filterValue}}</h3>
+{{/if}}
+
+{{#each searchResult}}
+    <div>
+        <div>
+            <i><strong>{{TITLR}}</strong></i><br>
+            <i>Description: {{DESCRIPTION}}</i><br>
+            <i>Location: {{LOCATION}}</i><br>
+            <i>Event Date: {{EVENT_DATETIME}}</i><br>
+            <i>Duration: {{DURATION}} HRS</i><br>
+            <i>Price: {{PRICE}}$</i><br>
+            <i>Public: {{IS_PUBLIC}}</i><br>
+            <i>Max attending: {{MAX_ATTENDING}}$</i><br><br>
+        </div>
+
+    </div>
+{{/each}}
