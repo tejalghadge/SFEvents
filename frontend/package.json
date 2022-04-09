@@ -34,7 +34,7 @@
     "google-map-react": "^1.1.4",
     "google-maps": "^3.3.0",
     "google-maps-react": "^2.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "multer": "^1.4.1",
     "react-google-map": "^3.1.1",
     "react-google-maps": "^9.4.5",
